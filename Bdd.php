@@ -1,5 +1,5 @@
 <?php
-$id = mysqli_connect("", "root", "", "edu_bts");
+$id = mysqli_connect("", "bassbant_edubts", "}Pg94-4+MMW[", "bassbant_edubts");
 
 
 // j'inclus toutes les fonctions de ma page
@@ -15,10 +15,10 @@ $id = mysqli_connect("", "root", "", "edu_bts");
 // je peux ajouter autant de require_once nécessaire pour inclure toutes vos fonctions
 
 // je me connectes à ma base de données
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "edu_bts";
+$servername = "109.70.148.39";
+$username = "bassbant_edubts";
+$password = "}Pg94-4+MMW[";
+$dbname = "bassbant_edubts";
 
 // Je Crée une connexion
 $conn = mysqli_connect($servername, $username, $password, $dbname);

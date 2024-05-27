@@ -191,7 +191,7 @@ $PageTitle = "EDU-BTS";
 
 
 
-            <?php
+            <!-- <?php
 
 
             $req = mysqli_query($conn, "SELECT * FROM toutes_formations");
@@ -214,7 +214,7 @@ $PageTitle = "EDU-BTS";
                         </div>
                     </a>
                 </div>
-            <?php } ?>
+            <?php } ?> -->
         </div>
     </div>
 

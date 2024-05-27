@@ -9,10 +9,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $email = $_POST['email'];
         $mdp = $_POST['mdp'];
 
-        $servername = "localhost";
-        $username = "root";
-        $password = "";
-        $dbname = "edu_bts";
+        $servername = "109.70.148.39";
+        $username = "bassbant_edubts";
+        $password = "}Pg94-4+MMW[";
+        $dbname = "bassbant_edubts";
         $req = mysqli_query($conn, "SELECT id, mdp, choice FROM users WHERE email='$email'");
         $num_ligne = mysqli_num_rows($req);
 
@@ -53,27 +53,27 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 <body>
 
-        <div class="cadre">
-            <div class="cadre_one">
-                <h1>EDU-BTS</h1>
-                <h2>ABONNEZ-VOUS</h2>
-                <P>Pour profiter des formations EDU-BTS en illimité</P>
-                <a href="payement.php">
-                <button  type="submit" class="btn" >S'ABONNER</button>
-                </a>
-            </div>
-        </div>
-
-        <div class="back">
-            <a href="index.php">
-                <button  type="submit" class="back">Retourner au site</button>
+    <div class="cadre">
+        <div class="cadre_one">
+            <h1>EDU-BTS</h1>
+            <h2>ABONNEZ-VOUS</h2>
+            <P>Pour profiter des formations EDU-BTS en illimité</P>
+            <a href="payement.php">
+                <button type="submit" class="btn">S'ABONNER</button>
             </a>
-                </div>
+        </div>
+    </div>
 
-    <?php if (isset($erreur_message)): ?>
-    <p class='erreur'>
-        <?php echo $erreur_message; ?>
-    </p>
+    <div class="back">
+        <a href="index.php">
+            <button type="submit" class="back">Retourner au site</button>
+        </a>
+    </div>
+
+    <?php if (isset($erreur_message)) : ?>
+        <p class='erreur'>
+            <?php echo $erreur_message; ?>
+        </p>
     <?php endif; ?>
 
     <div class="wrapper">
@@ -82,28 +82,28 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         <?php if (isset($_SESSION['users_id'])) { ?>
         <?php } else { ?>
-        <form action="" method="POST">
-            <h1>Connexion</h1>
-            <div class="input-box">
-                <input type="email" name="email" placeholder="Email" required>
-            </div>
+            <form action="" method="POST">
+                <h1>Connexion</h1>
+                <div class="input-box">
+                    <input type="email" name="email" placeholder="Email" required>
+                </div>
 
-            <div class="input-box">
-                <input type="password" name="mdp" placeholder="Mot de passe" required>
-            </div>
+                <div class="input-box">
+                    <input type="password" name="mdp" placeholder="Mot de passe" required>
+                </div>
 
-            <div class="remember-forgot">
-                <label><input type="checkbox">Se souvenir de moi</label>
-                <a href="#">Mot de passe oublié?</a>
-            </div>
+                <div class="remember-forgot">
+                    <label><input type="checkbox">Se souvenir de moi</label>
+                    <a href="#">Mot de passe oublié?</a>
+                </div>
 
-            <button type="submit" class="btn">Connexion</button>
+                <button type="submit" class="btn">Connexion</button>
 
-            <div class="register-link">
-                <p>Vous n'avez pas de compte? <a href="inscription.php">Inscrivez-vous</a></p>
-            </div>
-        </form>
-        
+                <div class="register-link">
+                    <p>Vous n'avez pas de compte? <a href="inscription.php">Inscrivez-vous</a></p>
+                </div>
+            </form>
+
 
 
         <?php } ?>
