@@ -32,7 +32,7 @@ require_once 'bars.php';
             $servername = "109.70.148.39";
             $username = "bassbant_edubts";
             $password = "}Pg94-4+MMW[";
-            $dbname = "bassbant_edubts";
+            $dbname = "bassbant_edu_bts";
 
             // Création de la connexion
             $conn = mysqli_connect($servername, $username, $password, $dbname);

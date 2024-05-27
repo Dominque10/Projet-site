@@ -12,7 +12,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $servername = "109.70.148.39";
         $username = "bassbant_edubts";
         $password = "}Pg94-4+MMW[";
-        $dbname = "bassbant_edubts";
+        $dbname = "bassbant_edu_bts";
         $req = mysqli_query($conn, "SELECT id, mdp, choice FROM users WHERE email='$email'");
         $num_ligne = mysqli_num_rows($req);
 

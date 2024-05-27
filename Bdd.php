@@ -1,5 +1,5 @@
 <?php
-$id = mysqli_connect("", "bassbant_edubts", "}Pg94-4+MMW[", "bassbant_edubts");
+$id = mysqli_connect("", "bassbant_edubts", "}Pg94-4+MMW[", "bassbant_edu_bts");
 
 
 // j'inclus toutes les fonctions de ma page
@@ -18,7 +18,7 @@ $id = mysqli_connect("", "bassbant_edubts", "}Pg94-4+MMW[", "bassbant_edubts");
 $servername = "109.70.148.39";
 $username = "bassbant_edubts";
 $password = "}Pg94-4+MMW[";
-$dbname = "bassbant_edubts";
+$dbname = "bassbant_edu_bts";
 
 // Je Crée une connexion
 $conn = mysqli_connect($servername, $username, $password, $dbname);

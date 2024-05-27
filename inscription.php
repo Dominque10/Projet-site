@@ -102,12 +102,12 @@ require_once 'Bdd.php';
         $servername = "109.70.148.39";
         $username = "bassbant_edubts";
         $admin_password = "}Pg94-4+MMW[";
-        $dbname = "bassbant_edubts";
+        $dbname = "bassbant_edu_bts";
 
 
         try {
             $password = password_hash($mdp, PASSWORD_DEFAULT);
-            $conn = new PDO('mysql:host=109.70.148.39; dbname=bassbant_edubts', $username, $admin_password);
+            $conn = new PDO('mysql:host=109.70.148.39; dbname=bassbant_edu_bts', $username, $admin_password);
 
             $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
