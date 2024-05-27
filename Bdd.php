@@ -30,4 +30,3 @@ if ($conn->connect_error) {
 
 // $conn->close();   me permet de mettre fin a la connexion avec la base de donnée
 ?>
-?>
