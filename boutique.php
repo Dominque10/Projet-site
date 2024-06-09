@@ -7,8 +7,8 @@ include 'layout.php'; // Inclure le fichier de connexion à la base de données
 <a href="panier.php">
     <?php
     // Vérifier si la variable de session est définie avant de l'utiliser
-    if (isset($_SESSION['edu_bts'])) {
-        echo array_sum($_SESSION['edu_bts']);
+    if (isset($_SESSION['bassbant_edu_bts'])) {
+        echo array_sum($_SESSION['bassbant_edu_bts']);
     } else {
         echo "votre panier est vide";
     }

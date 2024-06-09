@@ -135,10 +135,10 @@
                     <a href="panier.php">
                         <?php
                         // Vérifier si la variable de session est définie avant de l'utiliser
-                        if (isset($_SESSION['edu_bts'])) { ?>
+                        if (isset($_SESSION['bassbant_edu_bts'])) { ?>
                             <!--     
         // Si la variable de session 'edu_bts' est définie, afficher la somme de ses éléments -->
-                            <em class="total_panier"><?= array_sum($_SESSION['edu_bts']); ?></em>
+                            <em class="total_panier"><?= array_sum($_SESSION['bassbant_edu_bts']); ?></em>
                         <?php }
                         ?>
 

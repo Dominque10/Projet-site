@@ -1,5 +1,5 @@
 <?php
-$id = mysqli_connect("", "bassbant_edubts", "}Pg94-4+MMW[", "bassbant_edu_bts");
+
 
 
 // j'inclus toutes les fonctions de ma page
@@ -16,9 +16,10 @@ $id = mysqli_connect("", "bassbant_edubts", "}Pg94-4+MMW[", "bassbant_edu_bts");
 
 // je me connectes à ma base de données
 $servername = "109.70.148.39";
-$username = "bassbant_edubts";
-$password = "}Pg94-4+MMW[";
+$username = "bassbant_dominique";
+$password = "Dedan3269mbr@";
 $dbname = "bassbant_edu_bts";
+$id = mysqli_connect("109.70.148.39", "bassbant_dominique", "Dedan3269mbr@", "bassbant_edu_bts");
 
 // Je Crée une connexion
 $conn = mysqli_connect($servername, $username, $password, $dbname);
@@ -29,4 +30,5 @@ if ($conn->connect_error) {
 }
 
 // $conn->close();   me permet de mettre fin a la connexion avec la base de donnée
+?>
 ?>

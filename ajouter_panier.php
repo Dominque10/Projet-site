@@ -4,9 +4,9 @@ require_once 'Bdd.php';
 
 
 //creer la session
-if (!isset($_SESSION['edu_bts'])) {
+if (!isset($_SESSION['bassbant_edu_bts'])) {
     //s'il n'existe pas une session on cree une et on mets un tableau à l'interieur
-    $_SESSION['edu_bts'] = array();
+    $_SESSION['bassbant_edu_bts'] = array();
 
     
 }
@@ -29,10 +29,10 @@ if (isset($_GET['id'])) {//si un id a été envoyé alors :
     die("L'identifiant du produit n'est pas spécifié");
 }
 //ajouter le produit dans le panier 
-if (isset($_SESSION['edu_bts'][$id])) { // si le produit est déja dans le panier
-    $_SESSION['edu_bts'][$id]++; //Represente la quantité
+if (isset($_SESSION['bassbant_edu_bts'][$id])) { // si le produit est déja dans le panier
+    $_SESSION['bassbant_edu_bts'][$id]++; //Represente la quantité
 } else {
-    $_SESSION['edu_bts'][$id] = 1;
+    $_SESSION['bassbant_edu_bts'][$id] = 1;
    
 }
  //redirection vres la page panier.php

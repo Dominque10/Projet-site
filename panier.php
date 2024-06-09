@@ -38,9 +38,9 @@ $PageTitle = "EDU-BTS";
             $total = 0;
 
             // Vérifier si la variable de session est définie avant de l'utiliser
-            if (isset($_SESSION['edu_bts'])) {
-                echo array_sum($_SESSION['edu_bts']);
-                $ids = array_keys($_SESSION['edu_bts']);
+            if (isset($_SESSION['bassbant_edu_bts'])) {
+                echo array_sum($_SESSION['bassbant_edu_bts']);
+                $ids = array_keys($_SESSION['bassbant_edu_bts']);
             }
             if (empty($ids)) {
             } else {
@@ -51,7 +51,7 @@ $PageTitle = "EDU-BTS";
                 //liste des produits avec une boucle foreach
                 foreach ($produits as $produit) :
                     //calculer le total (prix unitaire * quantité)
-                    $total = $total + $produit['prix'] * $_SESSION['edu_bts'][$produit['id']];
+                    $total = $total + $produit['prix'] * $_SESSION['bassbant_edu_bts'][$produit['id']];
 
             ?>
                     <tr>
@@ -63,7 +63,7 @@ $PageTitle = "EDU-BTS";
                             <?= $produit['prix'] ?>
                         </td>
                         <td>
-                            <?= $_SESSION['edu_bts'][$produit['id']] // Quantité 
+                            <?= $_SESSION['bassbant_edu_bts'][$produit['id']] // Quantité 
                             ?>
                         </td>
                         <td><a href="retirer_panier.php?del=<?= $produit['id'] ?>"><img src="image/delete.png" alt="delete"></a></td>

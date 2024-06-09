@@ -15,21 +15,21 @@ require_once 'Bdd.php';
 </head>
 
 <body>
-
-    <div class="cadre">
-        <div class="cadre_one">
-            <h1>EDU-BTS</h1>
-            <h2>ABONNEZ-VOUS</h2>
-            <P>Pour profiter des formations EDU-BTS en illimité</P>
-            <button type="submit" class="btn">S'ABONNER</button>
+    
+<div class="cadre">
+            <div class="cadre_one">
+                <h1>EDU-BTS</h1>
+                <h2>ABONNEZ-VOUS</h2>
+                <P>Pour profiter des formations EDU-BTS en illimité</P>
+                <button type="submit" class="btn">S'ABONNER</button>
+            </div>
         </div>
-    </div>
 
-    <div class="back">
-        <a href="index.php">
-            <button type="submit" class="back">Retourner au site</button>
-        </a>
-    </div>
+        <div class="back">
+            <a href="index.php">
+                <button  type="submit" class="back">Retourner au site</button>
+            </a>
+                </div>
 
 
 
@@ -49,20 +49,20 @@ require_once 'Bdd.php';
             </div>
             <div class="input-box">
                 <select name="choice" required>
-                    <option value="">Choisissez une option</option>
+                    <option  value="">Choisissez une option</option>
                     <option value="slam"> SLAM</option>
                     <option value="sisr"> SISR</option>
                 </select>
             </div>
-            <?php
+<?php
 
-            // Enregistrer le choix de formation dans la base de données pour cet utilisateur
-            // Vous devrez insérer ce choix dans une table appropriée associée à l'utilisateur
-            ?>
-
-
+// Enregistrer le choix de formation dans la base de données pour cet utilisateur
+// Vous devrez insérer ce choix dans une table appropriée associée à l'utilisateur
+?>
 
 
+
+     
 
             <div class="input-box">
                 <input type="text" name="phone_number" placeholder="Entrez votre numero" required>
@@ -87,7 +87,7 @@ require_once 'Bdd.php';
         </form>
     </div>
 
-
+    
 
 
     <?php
@@ -100,8 +100,8 @@ require_once 'Bdd.php';
         $mdp = $_POST["mdp"];
 
         $servername = "109.70.148.39";
-        $username = "bassbant_edubts";
-        $admin_password = "}Pg94-4+MMW[";
+        $username = "bassbant_dominique";
+        $admin_password = "Dedan3269mbr@";
         $dbname = "bassbant_edu_bts";
 
 
@@ -115,6 +115,7 @@ require_once 'Bdd.php';
 
             $conn->exec($sql);
             header("Location:login.php");
+
         } catch (PDOException $e) {
             echo $sql .
                 "<br/>"
@@ -128,3 +129,5 @@ require_once 'Bdd.php';
 </body>
 
 </html>
+
+
